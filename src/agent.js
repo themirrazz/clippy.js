@@ -180,6 +180,15 @@ clippy.Agent.prototype = {
             this._balloon.speak(complete, text, hold);
         }, this);
     },
+    /***
+     *
+     * @param {String} html
+     */
+    speakHTML:function (html, hold) {
+        this._addToQueue(function (complete) {
+            this._balloon.speak(complete, text, hold);
+        }, this);
+    },
 
 
     /***
